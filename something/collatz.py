@@ -34,7 +34,7 @@ def render():
        st.line_chart(path, width="stretch")
 
 
-    with st.expander("The whole path")
+    with st.expander("The whole path"):
            st.write(" -> ".join(map(str, path)))
 
 
