@@ -1,3 +1,5 @@
+# ZKP Phantom (Cyclone)
+
 hello phantom people!
 
 I started this as a reason for me to learn python and cryptography at the same time
@@ -8,26 +10,27 @@ i know it is still "under contruction"
 
 the progress never stops though
 
-# ZKP Phantom (Cyclone Phantom)
 
-> A short, catchy one-line description of what your math journal / zero-knowledge proof project does.
+> Insane stuff from cryptography(math basically)
 
-**ZKP Phantom** is an interactive web application built to help users explore and document mathematical concepts (or zero-knowledge proofs) in a clean, structured journal format. 
+**Cyclone** is an interactive web application built to help users explore and document mathematical in a clean, structured journal format. 
 
 ---
 
 ## Live Demo
 
-Try out the app directly in your browser without downloading anything:
-* **Live App:** [Cyclone Phantom on Streamlit](https://streamlit.app)
+Check out this app directly in your browser :
+* **Live App:** [Cyclone on Streamlit](https://streamlit.app)
 
 ---
 
 ## Features
 
-* **Interactive Math Journal:** Write, organize, and review mathematical entries and notes.
-* **Clean Interface:** Built for distraction-free learning and problem-solving.
-* **Web-Based Access:** Runs directly in the browser with no local setup required for end users.
+* **A Math Journal**
+
+* for distraction-free learning and problem-solving.
+
+* **Ease of access** as it runs directly in the browser with no local setup required for end users.
 
 ---
 
@@ -37,19 +40,16 @@ This project was built using the following technologies and libraries:
 
 * **Language:** Python 3
 * **Frontend / Web Framework:** Streamlit
-* **Math & Data Libraries:** *(Add the libraries you used here, e.g., `SymPy`, `NumPy`, `LaTeX`, `Hashlib`)*
 * **Deployment:** Streamlit Community Cloud
 
 ---
 
-## How It Was Made & Challenges
+## Holy Challenges
 
-I built this project to combine interactive web tools with mathematical documentation. 
+I built this project to combine interactive web tools with my love for math 
 
-**Problems I had to fix along the way:**
-* **Challenge 1:** *(Briefly mention a bug or issue you solved—for example: rendering math equations cleanly in Streamlit, managing session state across journal entries, or handling app wake-up times).*
-* **Challenge 2:** *(Briefly mention how you fixed it—for example: using `st.latex()` for formatting or storing entries in `st.session_state`).*
-
+**Problems fixed along the way:**
+* I have commited every single problem i faced in this journey
 ---
 
 ## How to Run Locally
@@ -62,8 +62,7 @@ If you want to run or modify this project on your own machine, follow these step
    cd zkp-phantom
    ```
 
-2. **Install dependencies:**
-   Make sure you have [Python](https://python.org) installed, then install the required packages:
+2.Make sure you have [Python](https://python.org) installed, then install the required packages:
    ```bash
    pip install -r requirements.txt
    ```
