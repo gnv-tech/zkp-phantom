@@ -31,10 +31,12 @@ def render():
        col2.metric("How high?", peak)
 
        st.subheader("Holy path")
-       st.line_chart(path, use_container_width=True)
+       st.line_chart(path, width="stretch")
 
-    with st.expander("The whole Path"):
-        st.write(join(map(str, path)))
+
+    with st.expander("The whole path")
+           st.write(" -> ".join(map(str, path)))
+
 
 except ValueError as e:
     st.error(str(e))
