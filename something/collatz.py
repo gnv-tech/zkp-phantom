@@ -21,24 +21,23 @@ def render():
 
     n= st.number_input("Be positive and enter:", min_value=1, value=27, step=1)
 
-    try:
-       path = collatz(n)
-       steps = len(path)-1
-       peak = max(path)
+try:
+    path = collatz(n)
+    steps = len(path) - 1
+    peak = max(path)
 
-       col1, col2 = st.columns(2)
-       col1.metric("WTF are these numbers?", steps)
-       col2.metric("How high?", peak)
+    col1, col2 = st.columns(2)
+    col1.metric("WTF are these numbers?", steps)
+    col2.metric("How high?", peak)
 
-       st.subheader("Holy path")
-       st.line_chart(path, width="stretch")
-
+    st.subheader("Holy path")
+    st.line_chart(path, use_container_width=True)
 
     with st.expander("The whole path"):
-           st.write(" -> ".join(map(str, path)))
+        st.write(" -> ".join(map(str, path)))
 
-
-except ValueError as e:
+except Exception as e:
     st.error(str(e))
+
 
 
