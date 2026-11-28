@@ -1,29 +1,35 @@
 <!doctype html>
 <html>
- <head>
-   <meta charset="UTF-8" /> 
-   <meta name="viewport"  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title> Cyclone </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Cyclone</title>
     <link
-       rel="stylesheet"
-       href="https://jsdelivr.net"
-     />
- </head>
- <body>
-  <div id="root"></div>
-  <script src="https://jsdelivr.net"></script>
- <script> 
-  stlite.mount({
-       requirements: 
-       entrypoint: "app.py",
-       files: { app.py: {url: ./app.py, },},
-              { collatz.py: {url: something/collatz.py, },},
-              
-
-
-      document.getElementById("root")
-     ),
- </script>
-</body>
+      rel="stylesheet"
+      href="https://jsdelivr.net"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://jsdelivr.net"></script>
+    <script>
+      stlite.mount(
+        {
+          requirements: [], // Add package names in quotes here if needed, e.g. ["numpy", "matplotlib"]
+          entrypoint: "app.py",
+          files: {
+            "app.py": {
+              url: "./app.py",
+            },
+            "something/collatz.py": {
+              url: "./something/collatz.py",
+            },
+          },
+        },
+        document.getElementById("root")
+      );
+    </script>
+  </body>
 </html>
+
        
