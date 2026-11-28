@@ -16,7 +16,10 @@
   stlite.mount({
        requirements: 
        entrypoint: "app.py",
-       files: 
+       files: { app.py: {url: ./app.py, },},
+              { collatz.py: {url: something/collatz.py, },},
+              
+
 
       document.getElementById("root")
      ),
